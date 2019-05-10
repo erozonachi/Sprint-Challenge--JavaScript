@@ -30,13 +30,30 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+- While `.forEach` does not return anything except if the function argument passed to it uses a variable not within the scope of the function block (but it's visible and accessible within the block) to keep track of the result produced by the `.forEach` method as it iterates over the elements of an array. The `.map` method returns a new array that its entries depend on the function argument passed to the `.map` method.
+
 2. What is the difference between a function and a method?
+
+- A function is standalone (i.e. It's not associated or serve as a behavior to any object) and can be passed around, even as an argument to other functions within its outer scope. While a method is a function created within an object to serve as an action or behavior peculiar to that object, and legally accessible/invokable via the object.
 
 3. What is closure?
 
+- It is a concept often associated with functions, where they rely on their scope (inner scope) and the scope within which they exist (outer scope) for resources (variables and other functions) they need during execution.
+
 4. Describe the four rules of the 'this' keyword.
 
+- Window/Global Object Binding:-
+   It is when the use of `this` keyword refers or points to the global scope/context, and the Object referred to could be window or console object.
+- Implicit Binding:-
+   It is the usage of `this` keyword within an implied or immediate Object's context. Here, the `this` keyword assumes the context of its immediate environment or Object within which it is been used.
+- New Binding:-
+   This refers to the binding of `this` keyword on an instance of an object, created and assigned to a variable using the `new` keyword.
+- Explicit Binding:-
+   This kind of binding takes place when a context (eg: an object) is given or passed to the `this` keyword explicitly using JavaSricpt built-in methods like; call() and apply()
+
 5. Why do we need super() in an extended class?
+
+- We need super() in an extended class to be able to have/access the features (attributes and behaviors) available in the parent class, where there's an override in the child class. For example; the constructor() method of a child class will definitely override the constructor() of its parent class, and using super() within the constructor() of the child class makes the parent's constructor() available in the child's constructor().
 
 ## Project Set up
 
